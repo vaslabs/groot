@@ -45,6 +45,7 @@ library
                      , ansi-terminal
                      , attoparsec
                      , directory
+                     , hashmap
                      , exceptions
                      , lens
                      , ini
@@ -52,6 +53,7 @@ library
                      , conduit
                      , conduit-combinators
                      , conduit-merge
+                     , monad-control
                      , mtl
                      , resourcet
                      , transformers
@@ -71,10 +73,13 @@ executable groot
   build-depends:       base
                      , attoparsec
                      , ansi-terminal
+                     , ansi-wl-pprint
                      , boxes
                      , bytestring
                      , conduit                     
                      , exceptions
+                     , hashable
+                     , hashmap
                      , http-conduit
                      , http-types
                      , optparse-applicative                                                               
